@@ -1,0 +1,146 @@
+
+
+*{
+	margin: 0 auto;
+	padding: 0;
+	list-style: none;
+}
+#banner{
+	height: 460px;
+	width: 1226px;
+	margin: 0 auto;
+	background-color: pink;
+	position: relative;
+
+}
+.imgbox{
+	width: 1229px;
+	height: 460px;
+	position: relative;
+}
+.imgbox li{
+	width: 1226px;
+	height: 460px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	transition: all 0.5s;
+	opacity: 0.5;
+}
+.imgbox img{
+	width: 1226px;
+	height: 460px;
+}
+.imgbox li.active{
+	z-index: 9;
+	opacity: 1;
+}
+.pagerbox{
+	width: 150px;
+	height: 10px;
+/* 	background: red; */
+	position: absolute;
+	right: 30px;
+	bottom: 30px;
+	z-index: 999;
+}
+.pagerbox li{
+	width: 6px;
+	height: 6px;
+	margin: 0 auto;
+	background: #fff;
+	float: left;
+	border-radius: 50%;
+	border: 2px solid #6b6b6b;
+	cursor: pointer;
+}
+.pagerbox li.active{
+	background: red;
+}
+.pagerbox li.hover{
+	background: red;
+}
+.prev,.next{
+	width: 41px;
+	height: 69px;
+	position: absolute;
+	top: 50%;
+	margin-top: -80px;
+	z-index: 9999;
+	/* background: url('img/tubiao.png'); */
+	cursor: pointer;
+	opacity: .6;
+	line-height: 69px;	
+	text-align: center;
+	font-size: 30px;
+	font-weight: 800;
+}
+.prev{
+	left: 234px;
+	background-position: -84px 0;
+}
+.prev:hover{
+	background: rgba(0,0,0,0.2);
+}
+.next{
+	right: 0;
+	background-position: -124px 0;
+}
+.next:hover{
+	background: rgba(0,0,0,0.2);
+}
+.content_top{
+	width: 240px;
+	height: 30px;
+	float: right;
+	margin-top: 78px;
+	line-height: 21px;
+	/* background: red; */
+
+}
+.type{
+	width:60px;
+	height: 30px;
+	float: left;
+	text-align: center;
+	line-height: 30px;
+	cursor: pointer;
+	transition: all 1s;
+	/* background-color: yellow; */
+}
+.active{
+	color: orange;
+	height: 29px;
+	/* border-bottom: 1px solid orange; */
+	z-index: 999;
+}
+.type.active{
+	color: orange;
+	height: 29px;
+	border-bottom: 1px solid orange;
+	z-index: 999;
+}
+.content_bottom{
+	width: 1226px;
+	height: 370px;
+	position: relative;
+}
+.goodslist{
+	width: 1226px;
+	height: 370px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	color: red;
+	font-size: 30px;
+	text-align: center;
+	line-height: 370px;
+	background: #ccc;
+
+}
+.neirong_box{
+	width: 800px;
+	height: 416px;
+	float: left;
+
+}
